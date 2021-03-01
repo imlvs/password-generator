@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+/* CSS Variable */
+
+:root {
+    --light-purple: #613DC1;
+    --dark-purple: #4E148C;
+    --light-blue: #858AE3;
+}
+
+/* Universal Selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: var(--dark-purple);
+}
+
+button {
+    border: 0;
+    outline: 0;
+    background: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: #fff;;
+}
+
+i,
+span {
+    color: #fff;
+}
+
+/* Password Generator */
+
+.generator .container {
+    min-height: 100vh;
+}
+
+.generator-container {
+    background: var(--light-purple);
+    width: 340px;
+    border-radius: 1rem;
+    padding: .8rem;
+}
+
+.generator-header.flex {
+    justify-content: space-between;
+}
+
+.generator-header {
+    background: var(--light-blue);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+#generated-password {
+    font-size: .9rem;
+}
+
+.generator-body {
+    margin-top: 1.5rem;
+    padding: 0 .5rem;
+}
+
+.generator-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem 0;
+    color: #fff;
+}
+
+#password-length {
+    padding-left: .3rem;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 100%;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid var(--light-blue);
+    width: 100%;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    transition: all .2s linear;
+}
+
+.btn:hover {
+    transform: translate(2px, 2px);
+    background: #858AE3;
+}
